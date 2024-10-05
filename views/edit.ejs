@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>form{display: inline-block}body{background-color: rgb(229, 248, 248)}button{background-color: rgb(168, 168, 229)};</style>
+    <title>Edit User</title>
+</head>
+<body>
+    <h2>Edit User Details</h2>    
+    <p>User id : <%= user.id %></p>
+    <p>Email : <%= user.email %></p>
+
+    <form method="post" action="/users/<%= user.id %>?_method=PATCH">
+    <label for="user">Username : </label>
+    <input type="text" name="username" id="user" placeholder="<%= user.username %>"> <br><br>
+    <label for="pass">Password : </label>
+    <input type="password" name="password" id="pass" placeholder="Enter password">
+
+       <button>Edit Username</button>
+    </form> 
+</body>
+</html>

@@ -1,0 +1,18 @@
+table, th, td {
+    border: 1px solid black;;
+}
+body {
+    background-color: rgb(245, 234, 245);
+}
+#delbtn {
+    background-color: rgb(238, 137, 137);
+    border-radius: 3px;
+    width: 80px;
+}
+#editbtn {
+    background-color: rgb(156, 156, 230);
+    border-radius: 3px;
+    margin-left: 90px;
+    margin-bottom:1px ;
+    margin-right:1px ;
+}
